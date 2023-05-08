@@ -3,7 +3,7 @@ package com.si.Service;
 
 
 
-import com.si.Entity.ContactEntity;
+import com.si.entity.ContactEntity;
 import com.si.Repository.ContactRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

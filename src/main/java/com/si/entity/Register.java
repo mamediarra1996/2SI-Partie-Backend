@@ -1,4 +1,4 @@
-package com.si.Entity;
+package com.si.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,13 +10,13 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ActualiteEntity {
+@Table(name = "register")
+public class Register {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(name = "nom")
     private String nom;
-    private String dateactualite;
-    @Column(length = 2500)
-    private String contenue;
+    private String prenom;
+    private String email;
+    private String password;
 }

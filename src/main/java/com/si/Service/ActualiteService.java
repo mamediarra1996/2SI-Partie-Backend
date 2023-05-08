@@ -1,6 +1,6 @@
 package com.si.Service;
 
-import com.si.Entity.ActualiteEntity;
+import com.si.entity.ActualiteEntity;
 import com.si.Repository.ActualiteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @RestController
 @CrossOrigin("*")
-public class ActualiteService {
+public class  ActualiteService {
     @Autowired
     private ActualiteRepository actualiteRepository;
 
