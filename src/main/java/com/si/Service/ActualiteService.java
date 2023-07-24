@@ -1,10 +1,8 @@
 package com.si.Service;
-
 import com.si.entity.ActualiteEntity;
 import com.si.Repository.ActualiteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -20,7 +18,7 @@ public class  ActualiteService {
     }
 
     @RequestMapping(value="/actualite/{id}",method=RequestMethod.GET)
-    private Optional<ActualiteEntity> getcontact(@PathVariable Integer id){
+    private Optional<ActualiteEntity> getActualite(@PathVariable Integer id){
         return actualiteRepository.findById(id);
     }
 
@@ -40,8 +38,5 @@ public class  ActualiteService {
         actualiteRepository.deleteById(id);
         return true;
     }
-
-
-
 
 }
